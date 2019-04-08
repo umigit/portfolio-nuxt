@@ -3,13 +3,22 @@
     <div class="poster">
       <img class="my-photo" src="~assets/images/totoro.jpg" />
       <div class="profile">
-        <h1>天沼 海彦</h1>
+        <Profile/>
+        <ProfileEn/>
       </div>
     </div>
   </section>
 </template>
 
 <script>
+import Profile from "~/components/Profile";
+import ProfileEn from "~/components/ProfileEn";
+export default {
+  components: {
+    Profile,
+    ProfileEn,
+  }
+}
 </script>
 
 <style>
@@ -26,7 +35,7 @@
 
 .poster {
   background-color: #eee;
-  width: 750px;
+  width: 850px;
   padding: 20px;
   position: relative;
   z-index: 1;
@@ -35,13 +44,18 @@
 }
 
 .my-photo {
-  width: 45%;
+  width: 40%;
   object-fit: contain;
 }
 
 .profile {
+  width: 100%;
   margin-left: 40px;
-  padding: 50px 0;
+  padding: 20px 0;
+}
+
+p {
+  text-align: left;
 }
 </style>
 
