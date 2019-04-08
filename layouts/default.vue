@@ -1,8 +1,21 @@
 <template>
   <div>
+    <TheHeader/>
     <nuxt/>
+    <TheMask/>
   </div>
 </template>
+
+<script>
+import TheHeader from "~/components/TheHeader";
+import TheMask from "~/components/TheMask";
+export default {
+  components: {
+    TheHeader,
+    TheMask,
+  }
+}
+</script>
 
 <style>
 html {

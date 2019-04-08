@@ -1,7 +1,10 @@
 <template>
   <section class="container">
-    <div>
-      <img class="title" name="slide" src="~assets/images/umihiko_800.png"/>
+    <div class="poster">
+      <img class="my-photo" src="~assets/images/totoro.jpg" />
+      <div class="profile">
+        <h1>天沼 海彦</h1>
+      </div>
     </div>
   </section>
 </template>
@@ -21,12 +24,24 @@
   background-position: center center;
 }
 
-.title {
-  max-width: 800px;
-  width: 100%;
-  object-fit: contain;
+.poster {
+  background-color: #eee;
+  width: 750px;
+  padding: 20px;
   position: relative;
   z-index: 1;
+  display: flex;
+  border-radius: 6px;
+}
+
+.my-photo {
+  width: 45%;
+  object-fit: contain;
+}
+
+.profile {
+  margin-left: 40px;
+  padding: 50px 0;
 }
 </style>
 
