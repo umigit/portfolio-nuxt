@@ -82,6 +82,7 @@ button {
   padding: 10px 20px;
   background-color: #36967a;
   font-size: 16px;
+  color: #fff;
 }
 
 @media screen and (max-width: 479px) {
