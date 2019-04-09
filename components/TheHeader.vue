@@ -25,6 +25,7 @@
 <style>
 .header {
   height: 60px;
+  width: 100vw;
   background-color: #eee;
 }
 
@@ -36,6 +37,7 @@
 }
 
 .navi {
+  max-width: 100vw;
   display: inline-flex;
   list-style: none;
   margin: 0;
@@ -49,7 +51,7 @@
 .navi-item > a {
   color: #000;
   display: block;
-  padding: 10px 20px;
+
   text-decoration: none;
 }
 
@@ -69,5 +71,18 @@ a:hover {
 
 .nuxt-link-exact-active:visited {
   color: #fff;
+}
+
+@media screen and (min-width: 480px) {
+  .navi-item > a {
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+ .navi-item > a {
+    padding: 10px 5px;
+    font-size: 14spx;
+  }
 }
 </style>
