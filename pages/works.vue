@@ -1,8 +1,9 @@
 <template>
   <section class="container">
+    <modal :val="postItem" v-if="showModal" @close="closeModal"></modal>
     <div class="card-box">
       <div class="card" v-for="work in works" :key="work.id">
-        <img class="card-image" :src="work.image" />
+        <img class="card-image" :src="work.image" @click="openModal(work)"/>
         <div class="card-text">
           <h2>{{work.name}}</h2>
         </div>
@@ -13,12 +14,31 @@
 
 <script>
 import axios from 'axios'
+import modal from '~/components/modal'
 
 export default {
   async asyncData({}) {
     let result = await axios.get('https://umi-portfolio-api.herokuapp.com/api/works/?format=json');
     const works = result.data;
     return { works };
+  },
+  components: {
+    modal,
+  },
+  data() {
+    return {
+      showModal: false,
+      postItem: '',
+    }
+  },
+  methods: {
+    openModal(item) {
+      this.postItem = item;
+      this.showModal = true;
+    },
+    closeModal() {
+      this.showModal = false;
+    },
   },
 }
 </script>
@@ -50,8 +70,8 @@ export default {
 }
 
 .card-image {
-  width: 400px;
-  height: 300px;
+  width: 320px;
+  height: 240px;
   object-fit: cover;
   padding: 10px;
   background-color: #eee;

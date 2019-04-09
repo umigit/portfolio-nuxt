@@ -56,4 +56,18 @@
 a:visited {
   color: #000;
 }
+
+a:hover {
+  color: #fff;
+  background-color: rgba(54,150,122,0.5);
+}
+
+.nuxt-link-exact-active {
+  color: #fff;
+  background-color: rgb(54,150,122);
+}
+
+.nuxt-link-exact-active:visited {
+  color: #fff;
+}
 </style>
