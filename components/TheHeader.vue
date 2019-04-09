@@ -12,7 +12,7 @@
           <nuxt-link to="/works">WORKS</nuxt-link>
         </li>
         <li class="navi-item">
-          <a>SKILLS</a>
+          <nuxt-link to="/skills">SKILLS</nuxt-link>
         </li>
         <li class="navi-item">
           <a>LINKS</a>
