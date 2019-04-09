@@ -35,27 +35,36 @@ export default {
 
 .poster {
   background-color: #eee;
-  width: 850px;
-  padding: 20px;
+  max-width: 900px;
+  margin: 20px;
+  padding: 20px 0;
   position: relative;
   z-index: 1;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   border-radius: 6px;
 }
 
 .my-photo {
-  width: 40%;
+  max-height: 360px;
+  padding: 0 20px;
   object-fit: contain;
 }
 
 .profile {
-  width: 100%;
-  margin-left: 40px;
-  padding: 20px 0;
+  padding: 20px;
 }
 
 p {
   text-align: left;
+}
+
+@media screen and (max-width: 479px) {
+  .profile {
+    font-size: 14px;
+  }
 }
 </style>
 

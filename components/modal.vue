@@ -37,7 +37,7 @@ export default {
 .modal-mask {
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 2;
@@ -45,12 +45,13 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
 .modal-body {
   background-color: #eee;
   max-width: 900px;
-  margin: 0, 20px;
+  margin: 20px;
   padding: 20px;
 }
 
@@ -81,5 +82,17 @@ button {
   padding: 10px 20px;
   background-color: #36967a;
   font-size: 16px;
+}
+
+@media screen and (max-width: 479px) {
+  .modal-body {
+    max-width: 460px;
+    font-size: 14px;
+  }
+
+  .modal-image {
+    width: 280px;
+    height: 210px;
+  }
 }
 </style>
