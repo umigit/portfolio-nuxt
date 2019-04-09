@@ -44,7 +44,6 @@ export default {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  border-radius: 6px;
 }
 
 .my-photo {

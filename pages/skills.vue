@@ -45,6 +45,7 @@
   background-color: #eee;
   position: relative;
   z-index: 1;
+  margin: 20px;
   padding: 20px;
 }
 
