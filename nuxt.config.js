@@ -6,14 +6,8 @@ module.exports = {
   head: {
     title: 'portfolio-nuxt',
     script: [
-      { async src="https://www.googletagmanager.com/gtag/js?id=UA-138222932-1" },
-      {
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){ dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-138222932-1');
-      },
+      { async: true, src: "https://www.googletagmanager.com/gtag/js?id=UA-138222932-1" },
+      { src: "~/assets/javascripts/head.js" },
     ],
     meta: [
       { charset: 'utf-8' },
