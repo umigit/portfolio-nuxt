@@ -7,7 +7,7 @@ module.exports = {
     title: 'portfolio-nuxt',
     script: [
       { async: true, src: "https://www.googletagmanager.com/gtag/js?id=UA-138222932-1" },
-      { src: "~/assets/javascripts/head.js" },
+      { src: "/javascripts/head.js" },
     ],
     meta: [
       { charset: 'utf-8' },
