@@ -25,7 +25,7 @@
         </tr>
         <tr>
           <td>Tools</td>
-          <td>VSCode, SublimeText, Emacs, Vim, Git, GitHub, Slack, Excel, PowerPoint, Word, Keynote</td>
+          <td>VSCode, SublimeText, Emacs, Vim, Git, GitHub, Slack, Torello, Excel, PowerPoint, Word, Keynote</td>
         </tr>
         <tr>
           <td>Qualifications</td>
@@ -33,7 +33,7 @@
         </tr>
         <tr>
           <td>Languages</td>
-          <td>TOEIC: 730, IELTS: Overall 5.0(Listening 5.0, Reading 6.5, Writing 4.0, Speaking 4.5), CEFR Level B1</td>
+          <td>TOEIC: 720, IELTS: Overall 5.0(Listening 5.0, Reading 6.5, Writing 4.0, Speaking 4.5), CEFR Level B1</td>
         </tr>
       </table>
     </div>

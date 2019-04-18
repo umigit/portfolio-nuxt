@@ -6,8 +6,6 @@
   </section>
 </template>
 
-<script>
-</script>
 
 <style>
 .container {
