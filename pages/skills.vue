@@ -25,7 +25,7 @@
         </tr>
         <tr>
           <td>Tools</td>
-          <td>VSCode, SublimeText, Emacs, Vim, Git, GitHub, Slack, Excel, PowerPoint, Word, Keynote</td>
+          <td>VSCode, SublimeText, Emacs, Vim, Git, GitHub, Slack, Torello, Excel, PowerPoint, Word, Keynote</td>
         </tr>
         <tr>
           <td>Qualifications</td>
