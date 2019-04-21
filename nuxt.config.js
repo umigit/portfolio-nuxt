@@ -3,7 +3,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'portfolio-nuxt',
+    title: 'portfolio',
     script: [
       { async: true, src: "https://www.googletagmanager.com/gtag/js?id=UA-138222932-1" },
       { src: "/javascripts/head.js" },
