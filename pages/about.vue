@@ -23,7 +23,7 @@ export default {
 
 <style>
 .container {
-  min-height: calc(100vh - 60px);
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,6 +31,7 @@ export default {
   background-image: url("~assets/images/oya_nyanko.jpg");
   background-size: cover;
   background-position: center center;
+  padding-top:60px;
 }
 
 .poster {
