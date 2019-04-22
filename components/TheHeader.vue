@@ -27,6 +27,8 @@
   height: 60px;
   width: 100vw;
   background-color: #eee;
+  position: fixed;
+  z-index: 1;
 }
 
 .header-inner {
