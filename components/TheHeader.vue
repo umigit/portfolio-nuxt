@@ -28,7 +28,7 @@
   width: 100vw;
   background-color: #eee;
   position: fixed;
-  z-index: 1;
+  z-index: 3;
 }
 
 .header-inner {
