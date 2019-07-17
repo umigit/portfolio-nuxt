@@ -1,0 +1,81 @@
+version: 2
+
+defaults: &defaults
+  working_directory: ~/portfolio-staging-1
+  docker:
+    - image: circleci/python:3.6-jessie-node-browsers
+
+filter_only_master: &filter_only_master_and_staging
+  filters:
+    branches:
+      only:
+        - master
+        - staging
+
+jobs:
+  install:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache:
+          name: Restore Yarn Package Cache
+          keys:
+            - yarn-packages-{{ checksum "yarn.lock" }}
+      - run: yarn install
+      - save_cache:
+          name: Save Yarn Package Cache
+          key: yarn-packages-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache/yarn
+      - persist_to_workspace:
+          root: ~/portfolio-staging-1
+          paths:
+            - ./*
+
+  test:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/portfolio-staging-1
+      - run: yarn test
+
+  build:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/portfolio-staging-1
+      - run: yarn generate
+      - persist_to_workspace:
+          root: ~/aportfolio-staging-1
+          paths:
+            - dist
+
+  deploy:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/portfolio-staging-1
+      - run: sudo pip install awscli
+      - run: aws s3 sync ./dist/ s3://aws.noplan.cc --exact-timestamps --delete --exclude "*" --include "*.html" --cache-control no-store
+      - run: aws s3 sync ./dist/ s3://aws.noplan.cc --exact-timestamps --delete --exclude "*" --include "*.js" --cache-control max-age=31536000
+      - run: aws cloudfront create-invalidation --distribution-id $CF_DIST_ID --paths "/*"
+
+workflows:
+  version: 2
+  test-deploy:
+    jobs:
+      - install
+      - test:
+          requires:
+            - install
+      - build:
+          <<: *filter_only_master_and_staging
+          requires:
+            - install
+            - test
+      - deploy:
+          <<: *filter_only_master_and_staging
+          requires:
+            - install
+            - test
+            - build
