@@ -37,7 +37,7 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/portfolio-staging-1
-      - run: yarn test
+      # - run: yarn test
 
   build:
     <<: *defaults
