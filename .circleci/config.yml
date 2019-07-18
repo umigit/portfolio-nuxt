@@ -46,7 +46,7 @@ jobs:
           at: ~/portfolio-staging-1
       - run: yarn generate
       - persist_to_workspace:
-          root: ~/aportfolio-staging-1
+          root: ~/portfolio-staging-1
           paths:
             - dist
 
