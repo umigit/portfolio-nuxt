@@ -2,12 +2,12 @@
   <section class="container">
     <modal :val="postItem" v-if="showModal" @close="closeModal"></modal>
     <div class="card-box">
-      <div class="card" v-for="work in works" :key="work.id">
+      <!-- <div class="card" v-for="work in works" :key="work.id">
         <img class="card-image" :src="work.image" @click="openModal(work)"/>
         <div class="card-text">
           <h2>{{work.name}}</h2>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>
@@ -47,7 +47,7 @@ export default {
 .container {
   min-height: 100vh;
   width: 100vw;
-  background-image: url('~assets/images/oya_nyanko.jpg');
+  background-image: url('/images/oya_nyanko.jpg');
   background-size: cover;
   background-position: center center;
   padding-top:60px;
