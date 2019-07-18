@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <div class="poster">
-      <img class="my-photo" src="/images/totoro.jpg" />
+      <img class="my-photo" src="~assets/totoro.jpg" />
       <div class="profile">
         <Profile/>
         <ProfileEn/>
@@ -28,7 +28,7 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url("/images/oya_nyanko.jpg");
+  background-image: url("~assets/oya_nyanko.jpg");
   background-size: cover;
   background-position: center center;
   padding-top:60px;
