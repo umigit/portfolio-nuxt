@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <div class="poster">
-      <img class="my-photo" src="~assets/totoro.jpg" />
+      <img class="my-photo" src="~assets/at_cafe.png" />
       <div class="profile">
         <Profile/>
         <ProfileEn/>
