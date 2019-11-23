@@ -6,7 +6,7 @@ module.exports = {
   head: {
     title: 'portfolio',
     script: [
-      { async: true, src: "https://www.googletagmanager.com/gtag/js?id=UA-138222932-1" },
+      { async: true, src: "https://www.googletagmanager.com/gtag/js?id=UA-153145623-1" },
       { src: "/javascripts/head.js" },
     ],
     meta: [
