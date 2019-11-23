@@ -5,11 +5,11 @@
       <table class="skill" cellpadding="15">
         <tr>
           <td>Programing Languages</td>
-          <td>C, C#, Ruby, Python, JavaScript</td>
+          <td>C, C#, Ruby, Python, PHP, JavaScript</td>
         </tr>
         <tr>
           <td>FrameWorks</td>
-          <td>Ruby on Rails, Django, Nuxt.js, jQuery</td>
+          <td>Ruby on Rails, Django, Laravel, Nuxt.js, jQuery</td>
         </tr>
         <tr>
           <td>OS</td>
@@ -21,7 +21,7 @@
         </tr>
         <tr>
           <td>Server</td>
-          <td>AWS, Heroku, Netlify</td>
+          <td>AWS(EC2 S3 Cloudfront Route53), Conoha, Heroku, Netlify</td>
         </tr>
         <tr>
           <td>Tools</td>
