@@ -47,7 +47,7 @@ export default {
 .container {
   min-height: 100vh;
   width: 100vw;
-  background-image: url('~assets/images/oya_nyanko.jpg');
+  background-image: url('~assets/oya_nyanko.jpg');
   background-size: cover;
   background-position: center center;
   padding-top:60px;

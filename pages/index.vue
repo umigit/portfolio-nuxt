@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <div>
-      <img class="title" name="slide" src="~assets/images/umihiko_800.png"/>
+      <img class="title" name="slide" src="~assets/umihiko_800.png"/>
     </div>
   </section>
 </template>
@@ -14,7 +14,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url("~assets/images/oya_nyanko.jpg");
+  background-image: url("~assets/oya_nyanko.jpg");
   background-size: cover;
   background-position: center center;
   padding-top:60px;
