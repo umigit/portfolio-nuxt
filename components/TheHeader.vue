@@ -8,9 +8,9 @@
         <li class="navi-item">
           <nuxt-link to="/about">ABOUT</nuxt-link>
         </li>
-        <li class="navi-item">
+        <!-- <li class="navi-item">
           <nuxt-link to="/works">WORKS</nuxt-link>
-        </li>
+        </li> -->
         <li class="navi-item">
           <nuxt-link to="/skills">SKILLS</nuxt-link>
         </li>
