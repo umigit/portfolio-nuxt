@@ -5,11 +5,11 @@
       <table class="skill" cellpadding="15">
         <tr>
           <td>Programing Languages</td>
-          <td>C, C#, Ruby, Python, PHP, JavaScript</td>
+          <td>C, C#, Ruby, Python, PHP, JavaScript, TypeScript</td>
         </tr>
         <tr>
           <td>FrameWorks</td>
-          <td>Ruby on Rails, Django, Laravel, Nuxt.js, jQuery</td>
+          <td>Ruby on Rails, Django, Express, Laravel, Vue,js, Nuxt.js</td>
         </tr>
         <tr>
           <td>OS</td>
@@ -17,15 +17,15 @@
         </tr>
         <tr>
           <td>DB</td>
-          <td>MySQL</td>
+          <td>PostgreSQL, MySQL</td>
         </tr>
         <tr>
-          <td>Server</td>
-          <td>AWS(EC2 S3 Cloudfront Route53), Conoha, Heroku, Netlify</td>
+          <td>Services</td>
+          <td>AWS(EC2 S3 Cloudfront Route53 IAM), Conoha, Heroku, Netlify, GitHub, GitLab, CircleCI, JIRA, Confluence Torello</td>
         </tr>
         <tr>
           <td>Tools</td>
-          <td>VSCode, SublimeText, Emacs, Vim, Git, GitHub, Slack, Torello, Excel, PowerPoint, Word, Keynote</td>
+          <td>Docker, Vagrant, VSCode, SublimeText, Emacs, Vim, Git, Slack, Teams</td>
         </tr>
         <tr>
           <td>Qualifications</td>
