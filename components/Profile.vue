@@ -14,7 +14,8 @@
 
 <style>
 p {
-  white-space: wrap;
+  white-space: pre-line;
+  text-indent: 0em;
 }
 </style>
 

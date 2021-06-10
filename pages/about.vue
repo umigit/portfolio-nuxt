@@ -36,7 +36,8 @@ export default {
 
 .poster {
   background-color: #eee;
-  max-width: 900px;
+  width: 80%;
+  max-width: 950px;
   margin: 20px;
   padding: 20px 0;
   position: relative;
@@ -44,27 +45,45 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .my-photo {
   max-height: 360px;
-  padding: 0 20px;
+  width: 40%;
+  padding: 20px;
   object-fit: contain;
 }
 
 .profile {
   padding: 20px;
+  flex: 1;
 }
 
 p {
   text-align: left;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 959px) {
+  .poster {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 519px) {
+  .poster {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .my-photo {
+    width: 60%;
+  }
+
   .profile {
     font-size: 14px;
   }
 }
+
 </style>
 
