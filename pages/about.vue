@@ -37,7 +37,7 @@ export default {
 .poster {
   background-color: #eee;
   width: 80%;
-  max-width: 950px;
+  max-width: 900px;
   margin: 20px;
   padding: 20px 0;
   position: relative;
