@@ -5,9 +5,8 @@
       Born in Japan.
       Graduated from Tokyo Insutitute of Technology.
       Mejored in Control and Systems.
-      Worked as a C# programmer.
-      Studied hard about web technology.
-      And now started carrier as a web programmer...
+      Started to work as a C# developer.
+      And now work as a web developer.
      </p>
   </div>
 </template>
